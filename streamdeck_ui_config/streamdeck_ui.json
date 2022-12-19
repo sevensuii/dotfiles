@@ -1,0 +1,303 @@
+{
+    "streamdeck_ui_version": 1,
+    "state": {
+        "AL41K2C63483": {
+            "buttons": {
+                "0": {
+                    "0": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/visual-studio-code.png",
+                        "text": "HEOS",
+                        "command": "code-heos"
+                    },
+                    "1": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/visual-studio-code.png",
+                        "text": "DEIMOS",
+                        "command": "code-deimos"
+                    },
+                    "2": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/visual-studio-code.png",
+                        "text": "GEA",
+                        "command": "code-gea"
+                    },
+                    "3": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/visual-studio-code.png",
+                        "text": "DOTFILES",
+                        "command": "code /home/sevensuii/git_repos/dotfiles/"
+                    },
+                    "4": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Guardians-144x144-Power-On.gif",
+                        "switch_page": 10
+                    },
+                    "5": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Meets.png",
+                        "switch_page": 9
+                    },
+                    "6": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Blade_Timer.gif",
+                        "switch_page": 8
+                    },
+                    "7": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/sql-developer.png",
+                        "command": "dbeaver"
+                    },
+                    "8": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/postman.png",
+                        "command": "postman"
+                    },
+                    "9": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/pacman.gif"
+                    },
+                    "10": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/pong.gif"
+                    },
+                    "11": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/tetris.gif"
+                    },
+                    "12": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/BIOS.gif"
+                    },
+                    "13": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/outrun.gif"
+                    },
+                    "14": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Right-2.gif",
+                        "switch_page": 2
+                    }
+                },
+                "1": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Left-2.gif",
+                        "switch_page": 1
+                    },
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "2": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "3": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "4": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "5": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "6": {
+                    "0": {},
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {},
+                    "7": {},
+                    "8": {},
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {},
+                    "13": {},
+                    "14": {}
+                },
+                "7": {
+                    "0": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Return-Arrow.gif",
+                        "switch_page": 1
+                    },
+                    "1": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/BIOS.gif"
+                    },
+                    "2": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/pong.gif"
+                    },
+                    "3": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Pixelart.png"
+                    },
+                    "4": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/firework.gif"
+                    },
+                    "5": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Timer-2_Blue.gif"
+                    },
+                    "6": {
+                        "text": "TIMER 1",
+                        "text_vertical_align": "middle"
+                    },
+                    "7": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Play-Pause_Blue.gif",
+                        "command": "bash -c 'python /home/sevensuii/git_repos/streamdeck_apps/chrono/app.py timer 1 play-pause'"
+                    },
+                    "8": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Tick-Circle_Blue.gif",
+                        "command": "bash -c 'python /home/sevensuii/git_repos/streamdeck_apps/chrono/app.py timer 1 reset'"
+                    },
+                    "9": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Timer-Rewind_Blue.gif"
+                    },
+                    "10": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Timer-2_Yellow.gif"
+                    },
+                    "11": {
+                        "text": "TIMER 2",
+                        "text_vertical_align": "middle"
+                    },
+                    "12": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Play-Pause_Yellow.gif",
+                        "command": "bash -c 'python /home/sevensuii/git_repos/streamdeck_apps/chrono/app.py timer 2 play-pause'"
+                    },
+                    "13": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Tick-Circle_Yellow.gif",
+                        "command": "bash -c 'python /home/sevensuii/git_repos/streamdeck_apps/chrono/app.py timer 2 reset'"
+                    },
+                    "14": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Timer-Rewind_Yellow.gif"
+                    }
+                },
+                "8": {
+                    "0": {
+                        "switch_page": 1,
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Return-Arrow.gif"
+                    },
+                    "1": {},
+                    "2": {},
+                    "3": {},
+                    "4": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/skull_headset_008.gif"
+                    },
+                    "5": {},
+                    "6": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Discord_mic_ON.png",
+                        "command": "bash -c '$(w=`xdotool getactivewindow` && xdotool search --name \\'^Meet - .+$\\' windowfocus --sync key ctrl+d && xdotool windowactivate $w)'"
+                    },
+                    "7": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/webcam.png"
+                    },
+                    "8": {},
+                    "9": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/flying_windows.gif"
+                    },
+                    "10": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Squid1.png"
+                    },
+                    "11": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Squid2.png"
+                    },
+                    "12": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Squid3.png"
+                    },
+                    "13": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Squid2.png"
+                    },
+                    "14": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Squid4.png"
+                    }
+                },
+                "9": {
+                    "0": {},
+                    "1": {},
+                    "2": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Lock.gif"
+                    },
+                    "3": {},
+                    "4": {},
+                    "5": {},
+                    "6": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Tick.gif",
+                        "command": "shutdown 0",
+                        "switch_page": 1
+                    },
+                    "7": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/App-Power-On.png"
+                    },
+                    "8": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Stop-2.gif",
+                        "switch_page": 1
+                    },
+                    "9": {},
+                    "10": {},
+                    "11": {},
+                    "12": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Go-Back.gif",
+                        "command": "reboot"
+                    },
+                    "13": {},
+                    "14": {
+                        "icon": "/home/sevensuii/git_repos/dotfiles/streamdeck_config/icons/Sign_out_1_1.gif",
+                        "command": "loginctl kill-user sevensuii"
+                    }
+                }
+            },
+            "page": 7
+        }
+    }
+}
