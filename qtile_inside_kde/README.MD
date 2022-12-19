@@ -85,3 +85,8 @@ ln -sf "${HOME}"/git_repos/dotfiles/starship.toml "${HOME}"/.config/starship.tom
 chmod +x "${HOME}"/git_repos/dotfiles/qtile_inside_kde/qtile/autostart.sh & \
 chmod +x "${HOME}"/git_repos/dotfiles/scripts/*
 ```
+
+## Install KDE widgets
+
+- [Command Output](https://www.pling.com/p/1166510)
+- [Currently Playing](https://www.pling.com/p/1821551)
