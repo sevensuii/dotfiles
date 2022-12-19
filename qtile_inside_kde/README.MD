@@ -18,7 +18,7 @@ sudo pacman -S qtile picom fish rofi python-dbus unzip python-pip \
 
 pip3 install psutil fontawesome dbus-next glances[all] --user
 
-paru -S nerd-fonts-cascadia-code nerd-fonts-fira-code nerd-fonts-fantasque-sans-mono \
+paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono \
     nerd-fonts-jetbrains-mono nerd-fonts-roboto-mono nerd-fonts-ubuntu pfetch
 ```
 
@@ -62,8 +62,7 @@ Restart=on-failure
 Now it's time to reload the daemon so our service is now loaded into systemctl
 
 ```sh
-systemctl daemon-reload --user & \
-systemctl enable plasma-custom-wm.service --user
+systemctl daemon-reload --user && systemctl enable plasma-custom-wm.service --user
 ```
 
 The last thing to do is restart or log out and then you can use Qtile inside KDE
@@ -75,15 +74,14 @@ The last thing to do is restart or log out and then you can use Qtile inside KDE
 Link necesary config files
 
 ```bash
-ln -sf "${HOME}"/git_repos/dotfiles/qtile_inside_kde/qtile "${HOME}"/.config/qtile & \
-ln -sf "${HOME}"/git_repos/dotfiles/qtile_inside_kde/picom "${HOME}"/.config/picom & \
-ln -sf "${HOME}"/git_repos/dotfiles/kitty "${HOME}"/.config/kitty & \
-ln -sf "${HOME}"/git_repos/dotfiles/config.fish "${HOME}"/.config/fish/config.fish & \
-ln -sf "${HOME}"/git_repos/dotfiles/neofetch "${HOME}"/.config/neofetch & \
-ln -sf "${HOME}"/git_repos/dotfiles/starship.toml "${HOME}"/.config/starship.toml & \
-
-chmod +x "${HOME}"/git_repos/dotfiles/qtile_inside_kde/qtile/autostart.sh & \
-chmod +x "${HOME}"/git_repos/dotfiles/scripts/*
+ln -sf "$HOME"/git_repos/dotfiles/qtile_inside_kde/qtile "$HOME"/.config/qtile & \
+ln -sf "$HOME"/git_repos/dotfiles/qtile_inside_kde/picom "$HOME"/.config/picom & \
+ln -sf "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/kitty & \
+ln -sf "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish & \
+ln -sf "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/neofetch & \
+ln -sf "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml & \
+chmod +x "$HOME"/git_repos/dotfiles/qtile_inside_kde/qtile/autostart.sh & \
+chmod +x "$HOME"/git_repos/dotfiles/scripts/*
 ```
 
 ## Install KDE widgets
