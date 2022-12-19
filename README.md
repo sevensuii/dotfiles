@@ -104,9 +104,9 @@ Install the AUR packages:
 
 ```bash
 # Installing lsd, exa and qtile-extras
-paru -S -S lsd exa qtile-extras-git
+paru -S lsd exa qtile-extras-git
 # Installing JetBrains Mono Font, Cascadia Code and all Nerd Fonts
-paru -S nerd-fonts-cascadia-code nerd-fonts-fira-code nerd-fonts-fantasque-sans-mono nerd-fonts-jetbrains-mono \
+paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono nerd-fonts-jetbrains-mono \
     nerd-fonts-roboto-mono nerd-fonts-ubuntu
 # Installing pipes.sh, cava and brave-nightly-bin
 paru -S pipes.sh cava brave-nightly-bin
