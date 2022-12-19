@@ -66,7 +66,7 @@ ln -sf "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
 
 ```bash
 chmod +x "$HOME"/git_repos/dotfiles/qtile/autostart.sh & \
-chmod +x "$HOME"/git_repos/dotfiles/qtile/Scripts/*
+chmod +x "$HOME"/git_repos/dotfiles/scripts/*
 ```
 
 ### Installation of required packages
