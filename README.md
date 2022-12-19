@@ -53,20 +53,20 @@ I prefer to use sym links to keep changes in the repository, but you can copy th
 ### Create all sym links
 
 ```bash
-ln -sf "${HOME}"/git_repos/dotfiles/cava "${HOME}"/.config/cava & \
-ln -sf "${HOME}"/git_repos/dotfiles/dunst "${HOME}"/.config/dunst & \
-ln -sf "${HOME}"/git_repos/dotfiles/config.fish "${HOME}"/.config/fish/config.fish & \
-ln -sf "${HOME}"/git_repos/dotfiles/kitty "${HOME}"/.config/kitty & \
-ln -sf "${HOME}"/git_repos/dotfiles/neofetch "${HOME}"/.config/neofetch & \
-ln -sf "${HOME}"/git_repos/dotfiles/qtile "${HOME}"/.config/qtile & \
-ln -sf "${HOME}"/git_repos/dotfiles/starship.toml "${HOME}"/.config/starship.toml
+ln -sf "$HOME"/git_repos/dotfiles/cava "$HOME"/.config/cava & \
+ln -sf "$HOME"/git_repos/dotfiles/dunst "$HOME"/.config/dunst & \
+ln -sf "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish & \
+ln -sf "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/kitty & \
+ln -sf "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/neofetch & \
+ln -sf "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/qtile & \
+ln -sf "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
 ```
 
 ### Make necesary scripts executable
 
 ```bash
-chmod +x "${HOME}"/git_repos/dotfiles/qtile/autostart.sh & \
-chmod +x "${HOME}"/git_repos/dotfiles/qtile/Scripts/*
+chmod +x "$HOME"/git_repos/dotfiles/qtile/autostart.sh & \
+chmod +x "$HOME"/git_repos/dotfiles/qtile/Scripts/*
 ```
 
 ### Installation of required packages
@@ -95,8 +95,8 @@ My aur helper is paru, but you can use any other.
 If you want to use paru, install it with (you need to have rust installed):
 
 ```bash
-git clone https://aur.archlinux.org/paru.git
-cd ./paru
+git clone https://aur.archlinux.org/paru.git \
+cd ./paru \
 makepkg -si
 ```
 
@@ -117,7 +117,7 @@ paru -S pfetch
 Now make `vol_script` executable:
 
 ```bash
-sed -i "s|    icon_path = .*|    icon_path = $HOME/.config/dunst/icons|" "${HOME}"/.config/dunst/dunstrc
+sed -i "s|    icon_path = .*|    icon_path = $HOME/.config/dunst/icons|" "$HOME"/.config/dunst/dunstrc
 ```
 
 ### Compositor
@@ -126,7 +126,7 @@ For this installation I like to use picom jonaburg's fork
 
 ```bash
 paru -S picom-jonaburg-git
-ln -sf "${HOME}"/git_repos/dotfiles/picom/jonaburg_picom.conf "${HOME}"/.config/picom/picom.conf
+ln -sf "$HOME"/git_repos/dotfiles/picom/jonaburg_picom.conf "$HOME"/.config/picom/picom.conf
 ```
 
 ### Shell
