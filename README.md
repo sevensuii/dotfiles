@@ -27,20 +27,20 @@ This is a collection of my dotfiles. I use them to configure my system. I use Ar
 ---
 
 ### Qtile with Arch linux
-![Qtile preview 1](https://)
+![Qtile preview 1](https://github.com/sevensuii/dotfiles/blob/master/screenshots/qtile.png)
 
-![Qtile preview 2](https://)
+<!--![Qtile preview 2](https://)-->
 
 ### Qtile integrated with KDE Plasma
 
-![Qtile integrated with KDE Plasma 1](https://)
+![Qtile integrated with KDE Plasma 1](https://github.com/sevensuii/dotfiles/blob/master/screenshots/qtile_kde.png)
 
-![Qtile integrated with KDE Plasma 2](https://)
+<!--![Qtile integrated with KDE Plasma 2](https://)-->
 
 ## Installation
 ---
 
-**If you want to use the KDE version, head to [this document](https://)**
+**If you want to use the KDE version, head to [this document](https://github.com/sevensuii/dotfiles/blob/master/qtile_inside_kde/README.MD)**
 
 Clone the repository
 
