@@ -53,13 +53,13 @@ I prefer to use sym links to keep changes in the repository, but you can copy th
 ### Create all sym links
 
 ```bash
-ln -sf "$HOME"/git_repos/dotfiles/cava "$HOME"/.config/cava & \
-ln -sf "$HOME"/git_repos/dotfiles/dunst "$HOME"/.config/dunst & \
-ln -sf "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish & \
-ln -sf "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/kitty & \
-ln -sf "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/neofetch & \
-ln -sf "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/qtile & \
-ln -sf "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
+cp -r "$HOME"/git_repos/dotfiles/cava "$HOME"/.config/cava & \
+cp -r "$HOME"/git_repos/dotfiles/dunst "$HOME"/.config/dunst & \
+cp -r "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish & \
+cp -r "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/kitty & \
+cp -r "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/neofetch & \
+cp -r "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/qtile & \
+cp -r "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
 ```
 
 ### Make necesary scripts executable
@@ -126,7 +126,7 @@ For this installation I like to use picom jonaburg's fork
 
 ```bash
 paru -S picom-jonaburg-git
-ln -sf "$HOME"/git_repos/dotfiles/picom/jonaburg_picom.conf "$HOME"/.config/picom/picom.conf
+cp -r "$HOME"/git_repos/dotfiles/picom/jonaburg_picom.conf "$HOME"/.config/picom/picom.conf
 ```
 
 ### Shell
