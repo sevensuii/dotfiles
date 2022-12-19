@@ -1,0 +1,15 @@
+#!/bin/bash
+
+usage=$(top -bn1 | grep "Cpu(s)" | \
+            sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | \
+            awk '{print 100 - $1}');
+
+# añade un cero a la izquierda del string si $usage es menor que 10
+if [[ $(bc -l <<< "$usage < 10") -eq 1 ]]; then
+    # printf '%s' "0$usage%";
+    printf '0%.1f%s' "0$usage" "%";
+
+else
+    # printf '%s' "$usage%";
+    printf '%.1f%s' "$usage" "%";
+fi

@@ -1,0 +1,4 @@
+#!/bin/bash 
+
+layout=$(setxkbmap -query | grep layout | cut -f 2 -d ':' | xargs)
+printf "%s" "${layout}"

@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+layout=$(setxkbmap -query | grep layout | cut -f 2 -d ':' | xargs)
+
+if [[ $layout == "us" ]]; then
+    setxkbmap es
+else
+    setxkbmap us
+fi
+#echo $layout
+printf "%s" "${layout}"

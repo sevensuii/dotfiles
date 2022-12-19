@@ -1,0 +1,5 @@
+#!/bin/bash 
+
+rogauracore initialize_keyboard             #
+rogauracore rainbow_cycle 2                 #
+rogauracore brightness 2 

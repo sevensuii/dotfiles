@@ -1,0 +1,6 @@
+#!/bin/sh
+
+bat_power=$(cat /sys/class/power_supply/BAT0/power_now | awk '{printf("%.1f \n",$1*10^-6)}')
+bat_power=$(echo $bat_power | xargs)
+
+printf "%s" " ${bat_power}W"

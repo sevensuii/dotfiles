@@ -1,0 +1,7 @@
+#!/bin/bash 
+
+temp_icon=
+temp=$(sensors | grep Tctl | cut -d '+' -f 2)
+
+printf "%s" "${temp_icon} ${temp}"
+#printf $temp

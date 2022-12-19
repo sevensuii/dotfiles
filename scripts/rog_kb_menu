@@ -1,0 +1,98 @@
+#!/bin/bash 
+
+# Print menu with options
+mode=$(rogauracore |  tail -18 | \
+    rofi -dmenu -p 'Mode' -i -l 8 -width 20 \
+    -theme-str 'window {width: 20%;}' \
+    -theme-str 'listview {columns: 1;}' \
+    -theme-str 'configuration {show-icons: false;}' \
+    -theme-str 'configuration {font: "Jet Brains Mono Nerd Font Mono Regular 14";}')
+
+# Trimming whitespace
+mode=$(echo $mode | xargs)
+
+
+# Check if nothing was selected
+if [[ -z "${mode}" ]]; then
+    exit 0
+fi
+
+# Depending on which choice you made, it has different options
+echo $mode
+case $mode in
+    "single_static")
+        color=$(rofi -dmenu -p 'Color(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color=$(echo $color | xargs)
+        rogauracore $mode $color;;
+
+    "single_breathing")
+        color1=$(rofi -dmenu -p 'Color 1(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color2=$(rofi -dmenu -p 'Color 2(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        speed=$(rofi -dmenu -p 'Speed (1, 2, 3)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color1=$(echo $color1 | xargs)
+        color2=$(echo $color2 | xargs)
+        speed=$(echo $speed | xargs)
+        rogauracore $mode $color1 $color2 $speed;;
+
+    "single_colorcycle" | "rainbow_cycle")
+        speed=$(rofi -dmenu -p 'Speed (1, 2, 3)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        speed=$(echo $speed | xargs)
+        rogauracore $mode $speed;;
+
+    "multi_static")
+        color1=$(rofi -dmenu -p 'Color 1(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color2=$(rofi -dmenu -p 'Color 2(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color3=$(rofi -dmenu -p 'Color 3(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color4=$(rofi -dmenu -p 'Color 4(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color1=$(echo $color1 | xargs)
+        color2=$(echo $color2 | xargs)
+        color3=$(echo $color1 | xargs)
+        color4=$(echo $color2 | xargs)
+        rogauracore $mode $color1 $color2 $color3 $color4;;
+
+    "multi_breathing")
+        color1=$(rofi -dmenu -p 'Color 1(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color2=$(rofi -dmenu -p 'Color 2(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color3=$(rofi -dmenu -p 'Color 3(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color4=$(rofi -dmenu -p 'Color 4(hex)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        speed=$(rofi -dmenu -p 'Speed (1, 2, 3)' \
+            -width 20 -l -theme-str 'window{width: 20%;}' )
+        color1=$(echo $color1 | xargs)
+        color2=$(echo $color2 | xargs)
+        color3=$(echo $color1 | xargs)
+        color4=$(echo $color2 | xargs)
+        speed=$(echo $speed | xargs)
+        rogauracore $mode $color1 $color2 $color3 $color4 $speed;;
+
+    "red" | "green" | "blue" | "yellow" | "gold" | "cyan" | "magenta" | "white" | "black" | "rainbow" | "initialize_keyboard")
+        rogauracore $mode;;
+
+    "brightness")
+        brightness=$(rofi -dmenu -p 'Brightness (0, 1, 2, 3)' \
+            -width 20 -l -theme-str 'window{width: 25%;}' )
+        brightness=$(echo $brightness | xargs)
+        rogauracore $mode $brightness;;
+
+
+    *)
+        echo 'adios';;
+esac
+
+#if [[ $? == '0' ]];then
+#    dunstify -r "9995" -i "icons8-wi-fi-24" -t 3000 "Connected to ${ntw}!!"
+
+
+
