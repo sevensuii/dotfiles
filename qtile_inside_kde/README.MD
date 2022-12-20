@@ -76,10 +76,12 @@ Link necesary config files
 ```bash
 cp -r "$HOME"/git_repos/dotfiles/qtile_inside_kde/qtile "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/qtile_inside_kde/picom "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/qtile_inside_kde/latte/* "$HOME"/.config/latte/ && \
 cp -r "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/ && \
-cp -r "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish && \
+cp -r "$HOME"/git_repos/dotfiles/fish "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml && \
+cp -r "$HOME"/git_repos/dotfiles/rofi "$HOME"/.config/ && \
 chmod +x "$HOME"/git_repos/dotfiles/qtile_inside_kde/qtile/autostart.sh && \
 chmod +x "$HOME"/git_repos/dotfiles/scripts/*
 ```
