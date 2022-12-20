@@ -61,6 +61,7 @@ cp -r "$HOME"/git_repos/dotfiles/fish "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/rofi "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
 ```
 
