@@ -45,27 +45,29 @@ This is a collection of my dotfiles. I use them to configure my system. I use Ar
 Clone the repository
 
 ```bash
-git clone https://github.com/sevensuii/dotfiles.git
+mkdir -p "$HOME"/git_repos && \
+git clone https://github.com/sevensuii/dotfiles.git "$HOME"/git_repos/dotfiles
 ```
 
 I prefer to use sym links to keep changes in the repository, but you can copy the files if you want.
 
-### Create all sym links
+### Copy all folders
 
 ```bash
-cp -r "$HOME"/git_repos/dotfiles/cava "$HOME"/.config/cava & \
-cp -r "$HOME"/git_repos/dotfiles/dunst "$HOME"/.config/dunst & \
-cp -r "$HOME"/git_repos/dotfiles/config.fish "$HOME"/.config/fish/config.fish & \
-cp -r "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/kitty & \
-cp -r "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/neofetch & \
-cp -r "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/qtile & \
+mkdir -p "$HOME"/.config && \
+cp -r "$HOME"/git_repos/dotfiles/cava "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/dunst "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/fish "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/kitty "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/neofetch "$HOME"/.config/ && \
+cp -r "$HOME"/git_repos/dotfiles/qtile "$HOME"/.config/ && \
 cp -r "$HOME"/git_repos/dotfiles/starship.toml "$HOME"/.config/starship.toml
 ```
 
 ### Make necesary scripts executable
 
 ```bash
-chmod +x "$HOME"/git_repos/dotfiles/qtile/autostart.sh & \
+chmod +x "$HOME"/git_repos/dotfiles/qtile/autostart.sh && \
 chmod +x "$HOME"/git_repos/dotfiles/scripts/*
 ```
 
@@ -95,8 +97,8 @@ My aur helper is paru, but you can use any other.
 If you want to use paru, install it with (you need to have rust installed):
 
 ```bash
-git clone https://aur.archlinux.org/paru.git \
-cd ./paru \
+git clone https://aur.archlinux.org/paru.git "$HOME"/git_repos/paru && \
+cd "$HOME"/git_repos/paru && \
 makepkg -si
 ```
 
@@ -125,7 +127,8 @@ sed -i "s|    icon_path = .*|    icon_path = $HOME/.config/dunst/icons|" "$HOME"
 For this installation I like to use picom jonaburg's fork
 
 ```bash
-paru -S picom-jonaburg-git
+paru -S picom-jonaburg-git && \
+mkdir -p "$HOME"/.config/picom && \
 cp -r "$HOME"/git_repos/dotfiles/picom/jonaburg_picom.conf "$HOME"/.config/picom/picom.conf
 ```
 
@@ -140,9 +143,9 @@ chsh -s /usr/bin/fish
 ### Login manager (SDDM)
 
 ```bash
-sudo pacman -S sddm
-paru -S sddm-theme-sugar-candy-git
-sudo sed -i 's/Current=.*/Current=Sugar-Candy/' /usr/lib/sddm/sddm.conf.d/default.conf
+sudo pacman -S sddm && \
+paru -S sddm-theme-sugar-candy-git && \
+sudo sed -i 's/Current=.*/Current=Sugar-Candy/' /usr/lib/sddm/sddm.conf.d/default.conf && \
 sudo systemctl enable sddm.service
 ```
 
