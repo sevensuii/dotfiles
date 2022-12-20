@@ -22,7 +22,7 @@ paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono \
     nerd-fonts-jetbrains-mono nerd-fonts-roboto-mono nerd-fonts-ubuntu pfetch
 ```
 
-And the theme is `Sweetified Plasma`
+And the theme is `Sweetified Plasma` or `Sweet Plasma`
 
 ### This works for KDE Plasma 5.25 and above
 
