@@ -14,7 +14,8 @@ And everything else you need along with Qtile
 
 ```bash
 sudo pacman -S qtile picom fish rofi python-dbus unzip python-pip \
-    wget kitty starship php composer openvpn xdotool exa nitrogen neofetch
+    wget kitty starship php composer openvpn xdotool exa nitrogen neofetch \
+    bashtop
 ```
 ```bash
 pip3 install psutil fontawesome dbus-next glances[all] --user
