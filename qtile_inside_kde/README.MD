@@ -15,9 +15,11 @@ And everything else you need along with Qtile
 ```bash
 sudo pacman -S qtile picom fish rofi python-dbus unzip python-pip \
     wget kitty starship php composer openvpn xdotool exa nitrogen neofetch
-
+```
+```bash
 pip3 install psutil fontawesome dbus-next glances[all] --user
-
+```
+```bash
 paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono \
     nerd-fonts-jetbrains-mono nerd-fonts-roboto-mono nerd-fonts-ubuntu pfetch \
     qtile-extras-git
