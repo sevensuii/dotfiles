@@ -8,11 +8,11 @@ This is a collection of my dotfiles. I use them to configure my system. I use Ar
     - [Qtile with Arch linux](#qtile-with-arch-linux)
     - [Qtile integrated with KDE Plasma](#qtile-integrated-with-kde-plasma)
   - [Installation](#installation)
-    - [Create all sym links](#create-all-sym-links)
     - [Make necesary scripts executable](#make-necesary-scripts-executable)
     - [Installation of required packages](#installation-of-required-packages)
     - [Installation required pip packages](#installation-required-pip-packages)
     - [AUR packages](#aur-packages)
+    - [Snapd](#snapd)
     - [Compositor](#compositor)
     - [Shell](#shell)
     - [Login manager (SDDM)](#login-manager-sddm)
@@ -48,8 +48,6 @@ Clone the repository
 mkdir -p "$HOME"/git_repos && \
 git clone https://github.com/sevensuii/dotfiles.git "$HOME"/git_repos/dotfiles
 ```
-
-I prefer to use sym links to keep changes in the repository, but you can copy the files if you want.
 
 ### Copy all folders
 
@@ -108,11 +106,17 @@ Install the AUR packages:
 ```bash
 # Installing lsd, exa and qtile-extras
 paru -S lsd exa qtile-extras-git
+```
+```bash
 # Installing JetBrains Mono Font, Cascadia Code and all Nerd Fonts
 paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono nerd-fonts-jetbrains-mono \
     nerd-fonts-roboto-mono nerd-fonts-ubuntu
+ ```
+ ```bash
 # Installing pipes.sh, cava and brave-nightly-bin
 paru -S pipes.sh cava brave-nightly-bin
+```
+```bash
 # Installing pfetch as the fetch tool
 paru -S pfetch
 ```
@@ -121,6 +125,22 @@ Now make `vol_script` executable:
 
 ```bash
 sed -i "s|    icon_path = .*|    icon_path = $HOME/.config/dunst/icons|" "$HOME"/.config/dunst/dunstrc
+```
+
+### Snapd
+
+I prefer to use some packages with snapd like `phpstorm` or `visual studio code`
+
+```bash
+git clone https://aur.archlinux.org/snapd.git "$HOME"/git_repos/snapd && \
+cd "$HOME"/git_repos/snapd && \
+makepkg -si
+```
+```bash
+sudo systemctl enable --now snapd.socket
+```
+```bash
+sudo ln -s /var/lib/snapd/snap /snap
 ```
 
 ### Compositor
