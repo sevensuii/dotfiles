@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+temp_icon=
+temp=$(sensors | grep 'Package id 0:' | cut -d '+' -f 2 | cut -d '(' -f 1)
+
+printf "%s" "${temp_icon} ${temp}"
