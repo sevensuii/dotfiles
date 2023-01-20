@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Usage:
+# query_playectl player separator
+#   - player: the player to query, e.g. spotify
+#   - separator: the separator to use between the artist and title, e.g. --
+# Output:
+#   string: contains title and artist of the current song with the length of 34 characters
+
+player=$1
+separator=$2
+
+title=$(playerctl -p $player metadata title)
+artist=$(playerctl -p $player metadata artist)
+
+echo "${title::15} ${separator} ${artist::15}"
