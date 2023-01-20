@@ -79,7 +79,7 @@ sudo pacman -Syyu neofetch htop nitrogen xorg fish rofi qtile dunst \
     git vim curl flameshot pulseaudio playerctl scrot ttf-fantasque-sans-mono \
     brightnessctl bc bashtop acpi github-cli wget shfmt lxsession nautilus kitty \
     starship php composer nano network-manager-applet openvpn gnome-keyring sysstat \
-    xdotool arandr
+    xdotool arandr playerctl
 ```
 
 
