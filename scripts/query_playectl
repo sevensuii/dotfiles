@@ -14,3 +14,4 @@ title=$(playerctl -p $player metadata title)
 artist=$(playerctl -p $player metadata artist)
 
 echo "${title::15} ${separator} ${artist::15}"
+sleep 1

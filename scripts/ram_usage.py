@@ -2,12 +2,14 @@
 
 # from requests import get
 import psutil
+import time
 
 ram_used = '{:>2.2f}'.format(psutil.virtual_memory().used/1073741824)
 ram_total = '{:>2.2f}'.format(psutil.virtual_memory().total/1073741824)
 ram_percent = '{:>.0f}'.format(psutil.virtual_memory().percent)
 
-print('力 ' + ram_used + ' / ' + ram_total + ' GB (' + ram_percent + '%)')
+time.sleep(1)
+print('力 ' + ram_used + '/' + ram_total + ' GB (' + ram_percent + '%)')
 
 
 ## Code below to use it with Glances
