@@ -140,6 +140,9 @@ keys = [
     Key([mod, "control"], "Down", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "Up", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    # Toggle floating
+    Key([mod, "shift"], "f", lazy.window.toggle_floating(), desc="Toogle floating"),
+
     # Apps laucher and selector of active windows
     # I keep this because I also use powertoys on windows
     Key(["mod1"], "m", lazy.spawn('rofi -show drun'), desc='Launch Rofi'),
