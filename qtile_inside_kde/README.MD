@@ -23,7 +23,7 @@ pip3 install psutil fontawesome dbus-next glances[all] --user
 ```bash
 paru -S nerd-fonts-cascadia-code nerd-fonts-fantasque-sans-mono \
     nerd-fonts-jetbrains-mono nerd-fonts-roboto-mono nerd-fonts-ubuntu pfetch \
-    qtile-extras-git playerctl picom-jonaburg-git
+    qtile-extras-git playerctl picom-jonaburg-git cpupower-gui
 ```
 
 And the theme is `Sweetified Plasma` or `Sweet Plasma`

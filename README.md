@@ -104,8 +104,8 @@ makepkg -si
 Install the AUR packages:
 
 ```bash
-# Installing lsd, exa and qtile-extras
-paru -S lsd exa qtile-extras-git
+# Installing lsd, exa and qtile-extras and cpupower to control CPU Freq
+paru -S lsd exa qtile-extras-git cpupower-gui
 ```
 ```bash
 # Installing JetBrains Mono Font, Cascadia Code and all Nerd Fonts
