@@ -61,7 +61,7 @@ format = '[ $symbol ($version) ]($style)'
 [php]
 symbol = ""
 # style = ""
-format = 'via [$symbol ($version) ]($style)'
+format = ' [$symbol ($version) ]($style)'
 
 [python]
 symbol = " "
