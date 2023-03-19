@@ -30,7 +30,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][12][Applets][129][Configuration]
-PreloadWeight=100
+PreloadWeight=54
 SystrayContainmentId=130
 
 [Containments][12][Applets][159]
@@ -74,7 +74,7 @@ DialogHeight=510
 DialogWidth=680
 
 [Containments][12][Applets][228][Configuration][General]
-command=/home/$USER/git_repos/dotfiles/scripts/ram_usage.py
+command=$HOME/git_repos/dotfiles/scripts/ram_usage.py
 fixedWidth=190
 textAlign=4
 textColor=#ffffff
@@ -93,7 +93,7 @@ DialogHeight=510
 DialogWidth=680
 
 [Containments][12][Applets][230][Configuration][General]
-command=/home/$USER/git_repos/dotfiles/scripts/intel_cpu_temp | xargs
+command=$HOME/git_repos/dotfiles/scripts/intel_cpu_temp | xargs
 fixedWidth=78
 textAlign=4
 useFixedWidth=true
@@ -112,7 +112,7 @@ DialogWidth=680
 
 [Containments][12][Applets][232][Configuration][General]
 clickCommand=konsole -e /bin/bash bashtop
-command=/home/$USER/git_repos/dotfiles/scripts/cpu_usage.py
+command=$HOME/git_repos/dotfiles/scripts/cpu_usage.py
 waitForCompletion=true
 
 [Containments][12][Applets][244]
@@ -128,14 +128,14 @@ DialogWidth=760
 
 [Containments][12][Applets][244][Configuration][General]
 clickCommand=/home/$USER/git_repos/dotfiles/scripts/kb_layout_change
-command=/home/$USER/git_repos/dotfiles/scripts/kb_layout_query
+command=$HOME/git_repos/dotfiles/scripts/kb_layout_query
 
 [Containments][12][Applets][251]
 immutability=1
 plugin=com.github.zren.commandoutput
 
 [Containments][12][Applets][251][Configuration]
-PreloadWeight=26
+PreloadWeight=0
 
 [Containments][12][Applets][251][Configuration][ConfigDialog]
 DialogHeight=570
@@ -143,7 +143,7 @@ DialogWidth=760
 
 [Containments][12][Applets][251][Configuration][General]
 clickCommand=cpupower-gui &
-command=/home/$USER/git_repos/dotfiles/scripts/cpu_freq.py | xargs
+command=$HOME/git_repos/dotfiles/scripts/cpu_freq.py | xargs
 fixedWidth=90
 useFixedWidth=true
 waitForCompletion=true
@@ -151,6 +151,9 @@ waitForCompletion=true
 [Containments][12][Applets][252]
 immutability=1
 plugin=com.github.zren.commandoutput
+
+[Containments][12][Applets][252][Configuration]
+PreloadWeight=0
 
 [Containments][12][Applets][252][Configuration][ConfigDialog]
 DialogHeight=570
@@ -164,7 +167,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][12][Applets][40][Configuration]
-PreloadWeight=0
+PreloadWeight=79
 
 [Containments][12][Applets][40][Configuration][ConfigDialog]
 DialogHeight=558
@@ -214,7 +217,7 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][12][Applets][80][Configuration]
-PreloadWeight=50
+PreloadWeight=0
 
 [Containments][12][Applets][80][Configuration][ConfigDialog]
 DialogHeight=570
@@ -289,124 +292,124 @@ popupHeight=488
 popupWidth=925
 wallpaperplugin=org.kde.image
 
-[Containments][13][Applets][41]
+[Containments][13][Applets][262]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
+[Containments][13][Applets][262][Configuration]
+PreloadWeight=42
+
+[Containments][13][Applets][41]
+immutability=1
+plugin=org.kde.ktp-contactlist
+
 [Containments][13][Applets][41][Configuration]
-PreloadWeight=65
+PreloadWeight=0
 
 [Containments][13][Applets][42]
 immutability=1
-plugin=org.kde.ktp-contactlist
+plugin=org.kde.plasma.printmanager
 
 [Containments][13][Applets][42][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][43]
 immutability=1
-plugin=org.kde.plasma.printmanager
+plugin=org.kde.kdeconnect
 
 [Containments][13][Applets][43][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][44]
 immutability=1
-plugin=org.kde.kdeconnect
+plugin=org.kde.plasma.devicenotifier
 
 [Containments][13][Applets][44][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][45]
 immutability=1
-plugin=org.kde.plasma.devicenotifier
+plugin=org.kde.plasma.manage-inputmethod
 
 [Containments][13][Applets][45][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][46]
 immutability=1
-plugin=org.kde.plasma.manage-inputmethod
+plugin=org.kde.plasma.notifications
 
 [Containments][13][Applets][46][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][47]
 immutability=1
-plugin=org.kde.plasma.notifications
+plugin=org.kde.plasma.keyboardlayout
 
 [Containments][13][Applets][47][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][48]
 immutability=1
-plugin=org.kde.plasma.keyboardlayout
+plugin=org.kde.plasma.battery
 
 [Containments][13][Applets][48][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][49]
 immutability=1
-plugin=org.kde.plasma.battery
+plugin=org.kde.plasma.vault
 
 [Containments][13][Applets][49][Configuration]
-PreloadWeight=48
+PreloadWeight=0
 
 [Containments][13][Applets][50]
 immutability=1
-plugin=org.kde.plasma.vault
+plugin=org.kde.plasma.networkmanagement
 
 [Containments][13][Applets][50][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][51]
 immutability=1
-plugin=org.kde.plasma.networkmanagement
+plugin=org.kde.kalendar.contact
 
 [Containments][13][Applets][51][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][13][Applets][52]
 immutability=1
-plugin=org.kde.kalendar.contact
+plugin=org.kde.plasma.clipboard
 
 [Containments][13][Applets][52][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][53]
 immutability=1
-plugin=org.kde.plasma.clipboard
+plugin=org.kde.plasma.keyboardindicator
 
 [Containments][13][Applets][53][Configuration]
 PreloadWeight=0
 
 [Containments][13][Applets][54]
 immutability=1
-plugin=org.kde.plasma.keyboardindicator
-
-[Containments][13][Applets][54][Configuration]
-PreloadWeight=0
-
-[Containments][13][Applets][55]
-immutability=1
 plugin=org.kde.plasma.volume
 
-[Containments][13][Applets][55][Configuration]
-PreloadWeight=76
+[Containments][13][Applets][54][Configuration]
+PreloadWeight=30
 
-[Containments][13][Applets][55][Configuration][ConfigDialog]
+[Containments][13][Applets][54][Configuration][ConfigDialog]
 DialogHeight=570
 DialogWidth=760
 
-[Containments][13][Applets][55][Configuration][General]
+[Containments][13][Applets][54][Configuration][General]
 currentTab=streams
 migrated=true
 
-[Containments][13][Applets][56]
+[Containments][13][Applets][55]
 immutability=1
 plugin=org.kde.kscreen
 
-[Containments][13][Applets][56][Configuration]
+[Containments][13][Applets][55][Configuration]
 PreloadWeight=0
 
 [Containments][13][ConfigDialog]
@@ -485,7 +488,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][130][Applets][139][Configuration]
-PreloadWeight=76
+PreloadWeight=30
 
 [Containments][130][Applets][139][Configuration][ConfigDialog]
 DialogHeight=570
@@ -500,14 +503,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][130][Applets][151][Configuration]
-PreloadWeight=48
+PreloadWeight=0
 
 [Containments][130][Applets][152]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][130][Applets][152][Configuration]
-PreloadWeight=1
+PreloadWeight=0
 
 [Containments][130][Applets][157]
 immutability=1
@@ -544,12 +547,12 @@ plugin=org.kde.ktp-contactlist
 [Containments][130][Applets][239][Configuration]
 PreloadWeight=0
 
-[Containments][130][Applets][249]
+[Containments][130][Applets][261]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][130][Applets][249][Configuration]
-PreloadWeight=65
+[Containments][130][Applets][261][Configuration]
+PreloadWeight=42
 
 [Containments][130][ConfigDialog]
 DialogHeight=458
@@ -585,38 +588,38 @@ viewType=0
 visibility=0
 wallpaperplugin=org.kde.image
 
-[Containments][14][Applets][57]
+[Containments][14][Applets][56]
 immutability=1
 plugin=org.kde.plasma.eventcalendar
 
-[Containments][14][Applets][57][Configuration]
-PreloadWeight=50
+[Containments][14][Applets][56][Configuration]
+PreloadWeight=0
 
-[Containments][14][Applets][57][Configuration][ConfigDialog]
+[Containments][14][Applets][56][Configuration][ConfigDialog]
 DialogHeight=570
 DialogWidth=760
 
-[Containments][14][Applets][57][Configuration][General]
+[Containments][14][Applets][56][Configuration][General]
 clockShowLine2=true
 v71Migration=true
 v72Migration=true
 
-[Containments][14][Applets][57][Configuration][Google Calendar]
+[Containments][14][Applets][56][Configuration][Google Calendar]
 calendarList=W10=
 tasklistList=W10=
 
-[Containments][14][Applets][58]
+[Containments][14][Applets][57]
 immutability=1
 plugin=org.kde.windowtitle
 
-[Containments][14][Applets][58][Configuration]
+[Containments][14][Applets][57][Configuration]
 PreloadWeight=0
 
-[Containments][14][Applets][58][Configuration][ConfigDialog]
+[Containments][14][Applets][57][Configuration][ConfigDialog]
 DialogHeight=357
 DialogWidth=951
 
-[Containments][14][Applets][58][Configuration][General]
+[Containments][14][Applets][57][Configuration][General]
 boldFont=false
 containmentType=Latte
 filterActivityInfo=false
@@ -631,18 +634,18 @@ maximumLength=410
 placeHolder=Garuda KDE Dr460nized 🐉
 style=NoText
 
-[Containments][14][Applets][59]
+[Containments][14][Applets][58]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
-[Containments][14][Applets][59][Configuration]
-PreloadWeight=0
+[Containments][14][Applets][58][Configuration]
+PreloadWeight=79
 
-[Containments][14][Applets][59][Configuration][ConfigDialog]
+[Containments][14][Applets][58][Configuration][ConfigDialog]
 DialogHeight=558
 DialogWidth=720
 
-[Containments][14][Applets][59][Configuration][General]
+[Containments][14][Applets][58][Configuration][General]
 alphaSort=true
 favoritesPortedToKAstats=true
 icon=dr460nized-start
@@ -652,36 +655,55 @@ switchTabsOnHover=false
 systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
 
-[Containments][14][Applets][59][Shortcuts]
+[Containments][14][Applets][58][Shortcuts]
 global=
+
+[Containments][14][Applets][59]
+immutability=1
+plugin=com.github.zren.commandoutput
+
+[Containments][14][Applets][59][Configuration]
+PreloadWeight=0
+
+[Containments][14][Applets][59][Configuration][ConfigDialog]
+DialogHeight=570
+DialogWidth=760
+
+[Containments][14][Applets][59][Configuration][General]
+command=echo ''
 
 [Containments][14][Applets][60]
 immutability=1
 plugin=com.github.zren.commandoutput
+
+[Containments][14][Applets][60][Configuration]
+PreloadWeight=0
 
 [Containments][14][Applets][60][Configuration][ConfigDialog]
 DialogHeight=570
 DialogWidth=760
 
 [Containments][14][Applets][60][Configuration][General]
-command=echo ''
+clickCommand=cpupower-gui &
+command=$HOME/git_repos/dotfiles/scripts/cpu_freq.py | xargs
+fixedWidth=90
+useFixedWidth=true
+waitForCompletion=true
 
 [Containments][14][Applets][61]
 immutability=1
 plugin=com.github.zren.commandoutput
 
 [Containments][14][Applets][61][Configuration]
-PreloadWeight=26
+PreloadWeight=0
 
 [Containments][14][Applets][61][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
+DialogHeight=510
+DialogWidth=680
 
 [Containments][14][Applets][61][Configuration][General]
-clickCommand=cpupower-gui &
-command=/home/$USER/git_repos/dotfiles/scripts/cpu_freq.py | xargs
-fixedWidth=90
-useFixedWidth=true
+clickCommand=konsole -e /bin/bash bashtop
+command=$HOME/git_repos/dotfiles/scripts/cpu_usage.py
 waitForCompletion=true
 
 [Containments][14][Applets][62]
@@ -696,56 +718,55 @@ DialogHeight=510
 DialogWidth=680
 
 [Containments][14][Applets][62][Configuration][General]
-clickCommand=konsole -e /bin/bash bashtop
-command=/home/$USER/git_repos/dotfiles/scripts/cpu_usage.py
-waitForCompletion=true
-
-[Containments][14][Applets][63]
-immutability=1
-plugin=com.github.zren.commandoutput
-
-[Containments][14][Applets][63][Configuration]
-PreloadWeight=0
-
-[Containments][14][Applets][63][Configuration][ConfigDialog]
-DialogHeight=510
-DialogWidth=680
-
-[Containments][14][Applets][63][Configuration][General]
-command=/home/$USER/git_repos/dotfiles/scripts/intel_cpu_temp | xargs
+command=$HOME/git_repos/dotfiles/scripts/intel_cpu_temp | xargs
 fixedWidth=78
 textAlign=4
 useFixedWidth=true
 waitForCompletion=true
 
-[Containments][14][Applets][64]
+[Containments][14][Applets][63]
 immutability=1
 plugin=org.kde.plasma.lock_logout
+
+[Containments][14][Applets][63][Configuration]
+PreloadWeight=0
+
+[Containments][14][Applets][63][Configuration][ConfigDialog]
+DialogHeight=1398
+DialogWidth=2560
+
+[Containments][14][Applets][63][Configuration][General]
+show_lockScreen=false
+
+[Containments][14][Applets][64]
+immutability=1
+plugin=org.kde.plasma.pager
 
 [Containments][14][Applets][64][Configuration]
 PreloadWeight=0
 
 [Containments][14][Applets][64][Configuration][ConfigDialog]
-DialogHeight=1398
-DialogWidth=2560
+DialogHeight=1038
+DialogWidth=1912
 
 [Containments][14][Applets][64][Configuration][General]
-show_lockScreen=false
+showOnlyCurrentScreen=true
+showWindowIcons=true
 
 [Containments][14][Applets][65]
 immutability=1
-plugin=org.kde.plasma.pager
+plugin=com.github.zren.commandoutput
 
 [Containments][14][Applets][65][Configuration]
 PreloadWeight=0
 
 [Containments][14][Applets][65][Configuration][ConfigDialog]
-DialogHeight=1038
-DialogWidth=1912
+DialogHeight=570
+DialogWidth=760
 
 [Containments][14][Applets][65][Configuration][General]
-showOnlyCurrentScreen=true
-showWindowIcons=true
+clickCommand=/home/$USER/git_repos/dotfiles/scripts/kb_layout_change
+command=$HOME/git_repos/dotfiles/scripts/kb_layout_query
 
 [Containments][14][Applets][66]
 immutability=1
@@ -755,38 +776,23 @@ plugin=com.github.zren.commandoutput
 PreloadWeight=0
 
 [Containments][14][Applets][66][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
-
-[Containments][14][Applets][66][Configuration][General]
-clickCommand=/home/$USER/git_repos/dotfiles/scripts/kb_layout_change
-command=/home/$USER/git_repos/dotfiles/scripts/kb_layout_query
-
-[Containments][14][Applets][67]
-immutability=1
-plugin=com.github.zren.commandoutput
-
-[Containments][14][Applets][67][Configuration]
-PreloadWeight=0
-
-[Containments][14][Applets][67][Configuration][ConfigDialog]
 DialogHeight=510
 DialogWidth=680
 
-[Containments][14][Applets][67][Configuration][General]
-command=/home/$USER/git_repos/dotfiles/scripts/ram_usage.py
+[Containments][14][Applets][66][Configuration][General]
+command=$HOME/git_repos/dotfiles/scripts/ram_usage.py
 fixedWidth=190
 textAlign=4
 textColor=#ffffff
 useFixedWidth=true
 waitForCompletion=true
 
-[Containments][14][Applets][68]
+[Containments][14][Applets][67]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
-[Containments][14][Applets][68][Configuration]
-PreloadWeight=100
+[Containments][14][Applets][67][Configuration]
+PreloadWeight=54
 SystrayContainmentId=13
 
 [Containments][14][ConfigDialog]
@@ -800,7 +806,7 @@ PreloadWeight=0
 advanced=false
 alignment=10
 alignmentUpgraded=true
-appletOrder=59;65;58;60;62;63;61;67;66;68;57;64
+appletOrder=58;64;57;59;61;62;60;66;65;67;56;63
 appletShadowsEnabled=false
 backgroundOnlyOnMaximized=true
 backgroundRadius=30
@@ -824,7 +830,7 @@ splitterPosition=4
 splitterPosition2=6
 tasksUpgraded=true
 thickMargin=0
-userBlocksColorizingApplets=59;57;68
+userBlocksColorizingApplets=58;56;67
 windowColors=ActiveWindowColors
 zoomLevel=0
 
