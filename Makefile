@@ -38,5 +38,5 @@ stop-kwin-and-start-qtile: ## Stop Kwin and start Qtile
 copy-dotfiles-to-config:
 	@echo 'Not for now, SORRY'
 
-copy-lattebars-to-dotfiles:
-	cp $HOME/.config/latte/* $HOME/git_repos/dotfiles/qtile_inside_kde/latte/
+copy-lattebars-to-dotfiles: ## Copy lattebars to dotfiles
+	cp ${HOME}/.config/latte/*.latte ${HOME}/git_repos/dotfiles/qtile_inside_kde/latte/
