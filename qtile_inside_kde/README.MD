@@ -94,3 +94,13 @@ chmod +x "$HOME"/git_repos/dotfiles/scripts/*
 
 - [Command Output](https://www.pling.com/p/1166510)
 - [Currently Playing](https://www.pling.com/p/1821551)
+
+## Disable hidden `Windows Buttons` when maximized
+
+Delete this from `~/.config/kwinrc`
+```sh
+[Windows]
+BorderlessMaximizedWindows=true
+```
+
+### In case you're using latte, you need to disable it in latte's config
