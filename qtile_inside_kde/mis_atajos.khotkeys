@@ -2,8 +2,8 @@
 DataCount=1
 
 [Data_1]
-Comment=Comentario
-DataCount=3
+Comment=Mis atajos personalizados
+DataCount=4
 Enabled=true
 Name=Mis atajos
 SystemGroup=0
@@ -16,7 +16,7 @@ ConditionsCount=0
 [Data_1_1]
 Comment=Lanza kitty
 Enabled=true
-Name=Acción nueva
+Name=Lanza kitty
 Type=SIMPLE_ACTION_DATA
 
 [Data_1_1Actions]
@@ -90,6 +90,32 @@ TriggersCount=1
 Key=Meta+Space
 Type=SHORTCUT
 Uuid={a7a0b069-c3af-4b06-87b9-2ec777233437}
+
+[Data_1_4]
+Comment=Abre una terminal Konsole, para anotas en el archivos de notas rapidas en la ruta $HOME/Documentos/notas_rapidas.md
+Enabled=true
+Name=Abre notas_rapidas
+Type=SIMPLE_ACTION_DATA
+
+[Data_1_4Actions]
+ActionsCount=1
+
+[Data_1_4Actions0]
+CommandURL=$HOME/git_repos/dotfiles/scripts/quick_notes.sh
+Type=COMMAND_URL
+
+[Data_1_4Conditions]
+Comment=
+ConditionsCount=0
+
+[Data_1_4Triggers]
+Comment=Simple_action
+TriggersCount=1
+
+[Data_1_4Triggers0]
+Key=Meta+N
+Type=SHORTCUT
+Uuid={9918f614-6960-48d8-b160-5c1dbee9a24c}
 
 [Main]
 AllowMerge=false
