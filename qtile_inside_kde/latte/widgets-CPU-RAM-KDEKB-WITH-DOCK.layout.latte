@@ -30,7 +30,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][12][Applets][129][Configuration]
-PreloadWeight=62
+PreloadWeight=58
 SystrayContainmentId=130
 
 [Containments][12][Applets][159]
@@ -138,7 +138,7 @@ immutability=1
 plugin=com.github.zren.commandoutput
 
 [Containments][12][Applets][252][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][12][Applets][252][Configuration][ConfigDialog]
 DialogHeight=570
@@ -147,27 +147,16 @@ DialogWidth=760
 [Containments][12][Applets][252][Configuration][General]
 command=echo ''
 
-[Containments][12][Applets][259]
+[Containments][12][Applets][260]
 immutability=1
-plugin=com.github.zren.commandoutput
-
-[Containments][12][Applets][259][Configuration]
-PreloadWeight=42
-
-[Containments][12][Applets][259][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
-
-[Containments][12][Applets][259][Configuration][General]
-command=$HOME/git_repos/dotfiles/scripts/kb_layout_query | xargs
-interval=500
+plugin=org.kde.plasma.keyboardlayout
 
 [Containments][12][Applets][40]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][12][Applets][40][Configuration]
-PreloadWeight=87
+PreloadWeight=92
 
 [Containments][12][Applets][40][Configuration][ConfigDialog]
 DialogHeight=558
@@ -217,7 +206,7 @@ immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][12][Applets][80][Configuration]
-PreloadWeight=7
+PreloadWeight=33
 
 [Containments][12][Applets][80][Configuration][ConfigDialog]
 DialogHeight=570
@@ -243,19 +232,21 @@ PreloadWeight=0
 advanced=false
 alignment=10
 alignmentUpgraded=true
-appletOrder=40;159;79;252;232;230;251;228;259;129;80;207
+appletOrder=40;159;79;252;232;230;251;228;260;129;80;207
 appletShadowsEnabled=false
 backgroundOnlyOnMaximized=true
 backgroundRadius=30
+blurEnabled=false
 disablePanelShadowForMaximized=true
 dragActiveWindowEnabled=true
+durationTime=x3
 iconSize=16
 inConfigureAppletsMode=true
 maxLength=99
 panelOutline=true
 panelSize=0
 plasmaBackgroundForPopups=true
-proportionIconSize=2
+proportionIconSize=1.7000000000000002
 screenEdgeMargin=3
 shadowOpacity=60
 shadowSize=45
@@ -268,11 +259,11 @@ splitterPosition2=6
 tasksUpgraded=true
 thickMargin=0
 userBlocksColorizingApplets=40;80;129
-windowColors=ActiveWindowColors
+windowColors=TouchingWindowColors
 zoomLevel=0
 
 [Containments][12][Indicator]
-customType=
+customType=org.kde.latte.win10
 enabled=true
 type=org.kde.latte.plasma
 
@@ -297,7 +288,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][13][Applets][41][Configuration]
-PreloadWeight=42
+PreloadWeight=2
 
 [Containments][13][Applets][42]
 immutability=1
@@ -395,14 +386,13 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][55][Configuration]
-PreloadWeight=38
+PreloadWeight=19
 
 [Containments][13][Applets][55][Configuration][ConfigDialog]
 DialogHeight=570
 DialogWidth=760
 
 [Containments][13][Applets][55][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][13][Applets][56]
@@ -488,14 +478,13 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][130][Applets][139][Configuration]
-PreloadWeight=38
+PreloadWeight=24
 
 [Containments][130][Applets][139][Configuration][ConfigDialog]
 DialogHeight=570
 DialogWidth=760
 
 [Containments][130][Applets][139][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][130][Applets][151]
@@ -552,7 +541,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][130][Applets][254][Configuration]
-PreloadWeight=42
+PreloadWeight=7
 
 [Containments][130][ConfigDialog]
 DialogHeight=458
@@ -576,7 +565,7 @@ lastScreen=11
 layoutId=
 location=3
 maxLength=99
-name=Clone of Main screen top
+name=Copia de Main screen top
 onPrimary=false
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
@@ -588,12 +577,16 @@ viewType=0
 visibility=0
 wallpaperplugin=org.kde.image
 
+[Containments][14][Applets][261]
+immutability=1
+plugin=org.kde.plasma.keyboardlayout
+
 [Containments][14][Applets][57]
 immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][14][Applets][57][Configuration]
-PreloadWeight=7
+PreloadWeight=28
 
 [Containments][14][Applets][57][Configuration][ConfigDialog]
 DialogHeight=570
@@ -639,7 +632,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][14][Applets][59][Configuration]
-PreloadWeight=87
+PreloadWeight=92
 
 [Containments][14][Applets][59][Configuration][ConfigDialog]
 DialogHeight=558
@@ -663,7 +656,7 @@ immutability=1
 plugin=com.github.zren.commandoutput
 
 [Containments][14][Applets][60][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][14][Applets][60][Configuration][ConfigDialog]
 DialogHeight=570
@@ -738,21 +731,6 @@ DialogWidth=2560
 [Containments][14][Applets][64][Configuration][General]
 show_lockScreen=false
 
-[Containments][14][Applets][65]
-immutability=1
-plugin=com.github.zren.commandoutput
-
-[Containments][14][Applets][65][Configuration]
-PreloadWeight=42
-
-[Containments][14][Applets][65][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
-
-[Containments][14][Applets][65][Configuration][General]
-command=$HOME/git_repos/dotfiles/scripts/kb_layout_query | xargs
-interval=500
-
 [Containments][14][Applets][66]
 immutability=1
 plugin=org.kde.plasma.pager
@@ -792,7 +770,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][14][Applets][68][Configuration]
-PreloadWeight=62
+PreloadWeight=48
 SystrayContainmentId=13
 
 [Containments][14][ConfigDialog]
@@ -806,19 +784,21 @@ PreloadWeight=0
 advanced=false
 alignment=10
 alignmentUpgraded=true
-appletOrder=59;66;58;60;62;63;61;67;65;68;57;64
+appletOrder=59;66;58;60;62;63;61;67;261;68;57;64
 appletShadowsEnabled=false
 backgroundOnlyOnMaximized=true
 backgroundRadius=30
+blurEnabled=false
 disablePanelShadowForMaximized=true
 dragActiveWindowEnabled=true
+durationTime=x3
 iconSize=16
 inConfigureAppletsMode=true
 maxLength=99
 panelOutline=true
 panelSize=0
 plasmaBackgroundForPopups=true
-proportionIconSize=2
+proportionIconSize=1.7000000000000002
 screenEdgeMargin=3
 shadowOpacity=60
 shadowSize=45
@@ -831,11 +811,11 @@ splitterPosition2=6
 tasksUpgraded=true
 thickMargin=0
 userBlocksColorizingApplets=59;57;68
-windowColors=ActiveWindowColors
+windowColors=TouchingWindowColors
 zoomLevel=0
 
 [Containments][14][Indicator]
-customType=
+customType=org.kde.latte.win10
 enabled=true
 type=org.kde.latte.plasma
 
@@ -871,18 +851,18 @@ immutability=1
 plugin=org.kde.latte.plasmoid
 
 [Containments][15][Applets][69][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][15][Applets][69][Configuration][General]
 isInLatteDock=true
-launchers59=applications:brave-browser-nightly.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:phpstorm_phpstorm.desktop,applications:kitty.desktop,applications:postman.desktop,file:///snap/youtube-music-desktop-app/6/youtube-music-desktop-app?iconData=iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABCcAAAQdQGpcXKRAAAGQElEQVRoge2Zb2hVdRjHv8-9d3M0Z3NubvYma2Lgv0FqLlwwGyjkVCaI9ibQgZCbr7JiaKklpKYkLQihSZSRRHiDMkoSLade_2xrEvQmpZmm8-r0zZzbPef59uLeu3vuvefe_c52VQJ_Y5x7zsbv9_k-z_d57u-cAzwej3ZILiY5XlsbWDB-ejUoC4WoIlAJajmJQoAA2U-yl-Qlse1uFT1dZF89IydOWI9MAAGx6puqLdFGECtBTiQJkCBiRzqOIKKH-DW9QzDos6Wt6LeDZwTgQxMwUN9UJz5uhaKGoCTBZoCPXk4VFL1I8JTY9vbi9m9-eaAC-pesnxIoyGsl0QClLw025TxxLSN8QqBSFfpdgdjNhScPX8-5gPvLmuohcgBkmWukjWzjDp98jluiXFty5tsfTLh8ZvDNm0Qk6BUeXuGjtVGq0GD4hYY3cyJgcMXG7SLcTTJgAo-RPZ8ZHsNzBCDcFV6w_L2R-LJaKLKieZOSu0nIA7WNWyAAkEoh3yo7__0ezwLuL2uqF5GgaeQNuo1J5ON14MyopWo3VHT-6FoTrgL6l6yfkjcuv1sNPe-l23iBd8wfHhiwqqb--XNad3KtgUBBfqspPGPXSMKmQqmjsk0m-NhP2bgCX6tRBiL1TXW2D0dN-rwTLKIKS22QhB-CQHzCMUQ-ZT0VxeKKiz8dy5gBAmILt5l-ScU9bysR8QHF-97Bk7vehjWxCINqR7ORG3gQ9KnoVqYEPUnAwNINL4JYaG4bxNKvQH4-8uc8h4IFVSj7bCf882Zh0LZhqSYs4sE2GQTXXJtdV51RgAga6WFvk2QjEJBocPyTijFpdwsKG1dhSIiI2tCUyMMjfEywCNHoKoC1tQGADaa2SepADqDhYAT8mLB2FSbt3Qxr4gQMqQ3bmQ2P8InMo-E4agNpAgbGz6jGCFtip22c14YFuYyC-VWo-Hwv_PNmYUhdLOUBPrqQlkyfKQvSBPhpLxzN3ibpc4bhL52IyR9tReG61RgSIKKOdusJPvpZlTVpApSoMrWNs30mbR-yDAn4Ubz-VZTuezdhqViX8gIfO1alCSBQaWqbOHy2GnAVIYInqp_HU199DP_c2UmWMocHQFamCQC13NQ26TWQ3UKpI1BWgimf7MD4xjXDlkqriUzwIAgtT88AUWhqG7cFMhVxxmzkBVCy4TWUtDTBYqzNmsCTAFE4HIzElKmg2SOfaiMTC7mP2DxiCp-c7YSA6KOPUhPbuNnIawYYsdC3_0vcbTuEPIgxfCzb_W4CegE-bWKbVL96rQErfBu9LR9g8NzvyIdEfWwIH_u_3vhcjjbKS9m6TSb44SI24CeJ_tMXcHX164ic6x4VPEEI-FeaANp2txfbOOFNipiWhb5Pv0Bv8xbI7TvIk9HBgwQVF-PzJiykPAUfRgUfK5qM8Fa4D71bdmEo1Ik8CPwePZ-6nt-y29MyUIR_QgD7PMOPkIF7oU5cXbMBkVBXDB5jggfZd_nKhbNpAuTECQtk0Nzz8XO4tlFaFvr2H8SNps3w3epDnsPvY4AHgOAiYPihcCBpVbXbAFlHUkaCH464Y3GQgAisW324ueVDDIY6ooUqktaWRwdP2mq1OZGTbmiKfv06JGS7acHG_yYgOHAfA11_4N6pC7i2ZgMioc7kLjNG-Oh3Ddqn9XSFnMxpN_V3X1pTR_IoQV-2yKf632JiY-YDEIBEheUIHqRC7cWVV7oy39QDQPHJQ8eSamEE-Fhq4YcgX6K_ebmHB4hgKryrAACw7lsbBQxns42bQGE8pbmGZ9gn0uzG6iqgrOPwdVDXgrTicNngs7XXscJTYdnkumf-Pn_DWAAAlJw-fITKFsZC_yjgQRLClulXOjO-K8j6eL3sbHAPlO-TykcBT8WOaT0dGZ9MA4ZvaMLzl79BcifJwMOyjU_Y8uwI8MYCAOD63KVLfZQDhE5-oJEHwyDWVvZ0HDHh8vSS7-aMVyo4jq1KriToyzG8ggj6wY1Tezpy_5LPOW7MWfyyAtsA1pCUsW4PQLRTre1uff6BCIiiQa7NrqsWYh2BlaCWeN1VAgiq8kBlz_mH-6LbRYz_35mLqlVZQ7IKZCWh5RJ70kGyn2AvqJdA6Vbw1JXLZ0POXeXj8X8d_wHooFks6oJFQQAAAABJRU5ErkJggg%3D%3D
+launchers59=applications:brave-browser-nightly.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:phpstorm_phpstorm.desktop,applications:kitty.desktop,applications:postman.desktop
 
 [Containments][15][ConfigDialog]
 DialogHeight=600
 DialogWidth=586
 
 [Containments][15][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][15][General]
 advanced=false
@@ -917,7 +897,7 @@ lastScreen=11
 layoutId=
 location=4
 maxLength=100
-name=Clone of Default Dock
+name=Copia de Default Dock
 onPrimary=false
 plugin=org.kde.latte.containment
 raiseOnActivityChange=false
@@ -934,18 +914,18 @@ immutability=1
 plugin=org.kde.latte.plasmoid
 
 [Containments][16][Applets][70][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][16][Applets][70][Configuration][General]
 isInLatteDock=true
-launchers59=applications:brave-browser-nightly.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:phpstorm_phpstorm.desktop,applications:kitty.desktop,applications:postman.desktop,file:///snap/youtube-music-desktop-app/6/youtube-music-desktop-app?iconData=iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABCcAAAQdQGpcXKRAAAGQElEQVRoge2Zb2hVdRjHv8-9d3M0Z3NubvYma2Lgv0FqLlwwGyjkVCaI9ibQgZCbr7JiaKklpKYkLQihSZSRRHiDMkoSLade_2xrEvQmpZmm8-r0zZzbPef59uLeu3vuvefe_c52VQJ_Y5x7zsbv9_k-z_d57u-cAzwej3ZILiY5XlsbWDB-ejUoC4WoIlAJajmJQoAA2U-yl-Qlse1uFT1dZF89IydOWI9MAAGx6puqLdFGECtBTiQJkCBiRzqOIKKH-DW9QzDos6Wt6LeDZwTgQxMwUN9UJz5uhaKGoCTBZoCPXk4VFL1I8JTY9vbi9m9-eaAC-pesnxIoyGsl0QClLw025TxxLSN8QqBSFfpdgdjNhScPX8-5gPvLmuohcgBkmWukjWzjDp98jluiXFty5tsfTLh8ZvDNm0Qk6BUeXuGjtVGq0GD4hYY3cyJgcMXG7SLcTTJgAo-RPZ8ZHsNzBCDcFV6w_L2R-LJaKLKieZOSu0nIA7WNWyAAkEoh3yo7__0ezwLuL2uqF5GgaeQNuo1J5ON14MyopWo3VHT-6FoTrgL6l6yfkjcuv1sNPe-l23iBd8wfHhiwqqb--XNad3KtgUBBfqspPGPXSMKmQqmjsk0m-NhP2bgCX6tRBiL1TXW2D0dN-rwTLKIKS22QhB-CQHzCMUQ-ZT0VxeKKiz8dy5gBAmILt5l-ScU9bysR8QHF-97Bk7vehjWxCINqR7ORG3gQ9KnoVqYEPUnAwNINL4JYaG4bxNKvQH4-8uc8h4IFVSj7bCf882Zh0LZhqSYs4sE2GQTXXJtdV51RgAga6WFvk2QjEJBocPyTijFpdwsKG1dhSIiI2tCUyMMjfEywCNHoKoC1tQGADaa2SepADqDhYAT8mLB2FSbt3Qxr4gQMqQ3bmQ2P8InMo-E4agNpAgbGz6jGCFtip22c14YFuYyC-VWo-Hwv_PNmYUhdLOUBPrqQlkyfKQvSBPhpLxzN3ibpc4bhL52IyR9tReG61RgSIKKOdusJPvpZlTVpApSoMrWNs30mbR-yDAn4Ubz-VZTuezdhqViX8gIfO1alCSBQaWqbOHy2GnAVIYInqp_HU199DP_c2UmWMocHQFamCQC13NQ26TWQ3UKpI1BWgimf7MD4xjXDlkqriUzwIAgtT88AUWhqG7cFMhVxxmzkBVCy4TWUtDTBYqzNmsCTAFE4HIzElKmg2SOfaiMTC7mP2DxiCp-c7YSA6KOPUhPbuNnIawYYsdC3_0vcbTuEPIgxfCzb_W4CegE-bWKbVL96rQErfBu9LR9g8NzvyIdEfWwIH_u_3vhcjjbKS9m6TSb44SI24CeJ_tMXcHX164ic6x4VPEEI-FeaANp2txfbOOFNipiWhb5Pv0Bv8xbI7TvIk9HBgwQVF-PzJiykPAUfRgUfK5qM8Fa4D71bdmEo1Ik8CPwePZ-6nt-y29MyUIR_QgD7PMOPkIF7oU5cXbMBkVBXDB5jggfZd_nKhbNpAuTECQtk0Nzz8XO4tlFaFvr2H8SNps3w3epDnsPvY4AHgOAiYPihcCBpVbXbAFlHUkaCH464Y3GQgAisW324ueVDDIY6ooUqktaWRwdP2mq1OZGTbmiKfv06JGS7acHG_yYgOHAfA11_4N6pC7i2ZgMioc7kLjNG-Oh3Ddqn9XSFnMxpN_V3X1pTR_IoQV-2yKf632JiY-YDEIBEheUIHqRC7cWVV7oy39QDQPHJQ8eSamEE-Fhq4YcgX6K_ebmHB4hgKryrAACw7lsbBQxns42bQGE8pbmGZ9gn0uzG6iqgrOPwdVDXgrTicNngs7XXscJTYdnkumf-Pn_DWAAAlJw-fITKFsZC_yjgQRLClulXOjO-K8j6eL3sbHAPlO-TykcBT8WOaT0dGZ9MA4ZvaMLzl79BcifJwMOyjU_Y8uwI8MYCAOD63KVLfZQDhE5-oJEHwyDWVvZ0HDHh8vSS7-aMVyo4jq1KriToyzG8ggj6wY1Tezpy_5LPOW7MWfyyAtsA1pCUsW4PQLRTre1uff6BCIiiQa7NrqsWYh2BlaCWeN1VAgiq8kBlz_mH-6LbRYz_35mLqlVZQ7IKZCWh5RJ70kGyn2AvqJdA6Vbw1JXLZ0POXeXj8X8d_wHooFks6oJFQQAAAABJRU5ErkJggg%3D%3D
+launchers59=applications:brave-browser-nightly.desktop,applications:firefox.desktop,applications:org.kde.dolphin.desktop,applications:phpstorm_phpstorm.desktop,applications:kitty.desktop,applications:postman.desktop
 
 [Containments][16][ConfigDialog]
 DialogHeight=600
 DialogWidth=586
 
 [Containments][16][Configuration]
-PreloadWeight=34
+PreloadWeight=10
 
 [Containments][16][General]
 advanced=false
